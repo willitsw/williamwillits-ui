@@ -34,6 +34,12 @@ const MusicPage = () => {
       <Row gutter={[16, 24]} justify="space-around">
         <Col>
           <YouTubeSegment
+            embedId="38DEKEvUJ9Y"
+            title="Francesco da Milano - Ricercar 84"
+          />
+        </Col>
+        <Col>
+          <YouTubeSegment
             embedId="JFbJrn7dOXs"
             title="Joaquin Turina: Homage a Tarrega"
           />
