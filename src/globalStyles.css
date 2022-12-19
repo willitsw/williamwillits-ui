@@ -1,5 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/open-baskerville-0053');
-@import '~antd/dist/antd.css';
+@import '../node_modules//antd//dist/reset.css';
 
 body {
     font-family: 'Open Baskerville 0.0.53', sans-serif;

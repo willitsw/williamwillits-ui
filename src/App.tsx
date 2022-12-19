@@ -1,16 +1,20 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MusicPage from "./pages/music/index";
 import PortfolioPage from "./pages/portolio";
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="*" element={<MusicPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <MusicPage />,
+    },
+    {
+      path: "/portfolio",
+      element: <PortfolioPage />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 };
 
 export default App;

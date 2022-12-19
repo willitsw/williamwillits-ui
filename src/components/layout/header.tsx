@@ -1,5 +1,4 @@
 import { Avatar, Typography } from "antd";
-import styles from "./header.module.css";
 
 interface HeaderProps {
   imageUrl: string;
@@ -8,7 +7,7 @@ interface HeaderProps {
 
 const Header = ({ imageUrl, title }: HeaderProps) => {
   return (
-    <div className={styles.container}>
+    <div style={{ textAlign: "center" }}>
       <Avatar src={imageUrl} size={200} style={{ marginBottom: "20px" }} />
       <Typography.Title level={1}>{title}</Typography.Title>
     </div>
