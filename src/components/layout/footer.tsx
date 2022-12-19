@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div style={{ textAlign: "center", marginTop: 20 }}>
-      All content owned by William or his friends.
+      All content owned by Bill or his friends.
     </div>
   );
 };
