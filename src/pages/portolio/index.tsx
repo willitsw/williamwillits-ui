@@ -14,7 +14,7 @@ const PortfolioPage = () => {
     <Page title="Resume / Portfolio" imageUrl={techSelfie}>
       <Tabs
         defaultActiveKey="overview"
-        centered
+        centered={!isTabletOrMobile}
         size={isTabletOrMobile ? "small" : "large"}
         items={[
           {

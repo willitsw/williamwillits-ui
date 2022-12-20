@@ -15,10 +15,8 @@ const projects: Project[] = [
     image: beerIcon,
     name: "What Ales You",
     description: `This is a beer recipe builder app I created as a tool for the homebrewing community. 
-      After creating a free account, homebrewers can build recipes and keep a brew journal here. 
-      The recipe builder will calculate things like color (SRM), bitterness (IBU), predicted ABV, 
-      predicted water loss, and other useful metrics based on the ingredients entered. 
-      There are features coming to calculate water chemistry and mineral content. 
+      After creating a free account, homebrewers can build recipes here while automatically calculating 
+      metrics like color (SRM), bitterness (IBU), predicted ABV, predicted water loss, and other things. 
       Technologies include a React frontend (relying heavily on Ant Design) and a fairly thin 
       API/backend comprised of AWS Lambdas which talk to a handful of DynamoDB tables. 
       All infrastructure is provisioned with Terraform.`,
@@ -105,28 +103,28 @@ const PortfolioTab = () => {
             >
               <Typography.Title level={4}>{project.name}</Typography.Title>
               <Typography.Text>{project.description}</Typography.Text>
-              <List
-                size="small"
-                dataSource={project.links}
-                renderItem={(link) => (
-                  <List.Item
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "flex-start",
-                    }}
-                  >
-                    <Typography.Text style={{ fontWeight: "bold" }}>
-                      {link.description}:
-                    </Typography.Text>
-                    <Button type="text" href={link.href} target="_blank">
-                      {link.href}
-                    </Button>
-                  </List.Item>
-                )}
-              />
             </div>
           </div>
+          <List
+            size="small"
+            dataSource={project.links}
+            renderItem={(link) => (
+              <List.Item
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "flex-start",
+                }}
+              >
+                <Typography.Text style={{ fontWeight: "bold" }}>
+                  {link.description}:
+                </Typography.Text>
+                <Button type="text" href={link.href} target="_blank">
+                  {link.href}
+                </Button>
+              </List.Item>
+            )}
+          />
           <Divider />
         </>
       ))}

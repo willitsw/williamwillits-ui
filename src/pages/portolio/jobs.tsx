@@ -180,6 +180,12 @@ export const jobs: Job[] = [
     ],
     technologies: [
       {
+        name: "React",
+        description:
+          "Used for all projects that are fully custom and too specialized to use a CMS.",
+        level: 1,
+      },
+      {
         name: "AWS Lambda",
         description: "Used for lightweight, stateless BFF APIs.",
         level: 1,
