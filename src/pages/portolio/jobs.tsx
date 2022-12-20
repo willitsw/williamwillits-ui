@@ -89,6 +89,11 @@ export const jobs: Job[] = [
           "For very lightweight, low-traffic BFF services, or highly scaling back-end jobs, AWS Lambda was utilized.",
         level: 1,
       },
+      {
+        name: "CSS",
+        description: "Implemented media queries for responsive designs.",
+        level: 1,
+      },
     ],
   },
   {
@@ -146,7 +151,19 @@ export const jobs: Job[] = [
       {
         name: "Azure Functions",
         description:
-          "Used python extensively for automating ETL processes for incoming business. Also, was a key contributor on an aquisition written in Django.",
+          "Developed lightweight APIs and asynchronous, scaling back-end processes. Leveraged Durable Functions with orchestration for more complex and highly scaling workflows.",
+        level: 1,
+      },
+      {
+        name: "CSS",
+        description:
+          "Implemented scoped styling using CSS modules in a legacy front-end repository.",
+        level: 1,
+      },
+      {
+        name: "Django",
+        description:
+          "Worked heavily on an aquisition that was a large Django monolith. Developed a process for developers on Windows machines to conttribute and run the code using WSL.",
         level: 1,
       },
     ],
@@ -227,6 +244,18 @@ export const jobs: Job[] = [
         name: "CSS",
         description:
           "Proficiency with styling, positioning, responsiveness, and accessibility.",
+        level: 1,
+      },
+      {
+        name: "Github Actions",
+        description:
+          "Used for all CI/CD workflows for freelance and side projects.",
+        level: 1,
+      },
+      {
+        name: "Terraform",
+        description:
+          "Used for all infrastructure-as-code needs in freelance and side projects.",
         level: 1,
       },
     ],
