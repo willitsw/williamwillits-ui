@@ -39,7 +39,7 @@ export const jobs: Job[] = [
       {
         name: "Python",
         description:
-          "Most back-end code was written in Python, with extensive use of Pydantic models. Made many contributions across numerous repositories.",
+          "Most back-end code was written in Python, with extensive use of Pydantic models. Made many contributions across a service-oriented architecture.",
         level: 1,
       },
       {
@@ -74,19 +74,19 @@ export const jobs: Job[] = [
       {
         name: "Postgres",
         description:
-          "Postgres was the database of choice for most python services. Used either Django migrations or Alembic for DB versioning, and either Django ORM or SQL Alchemy for queries.",
+          "Postgres was the database of choice for most python services. Used either Django migrations or Alembic for DB versioning, and either Django ORM or SQL Alchemy for operations.",
         level: 1,
       },
       {
-        name: "DynamoDB",
+        name: "AWS DynamoDB",
         description:
-          "Dynamo was a secondary choice when NoSQL made sense. Extensive use of global secondary indexing and intelligent management of sort keys to make querying data more powerful.",
+          "Dynamo was a secondary choice when NoSQL made more sense. Extensive use was made of global secondary indexing and intelligent management of sort keys to make querying data more powerful.",
         level: 1,
       },
       {
-        name: "Lambda",
+        name: "AWS Lambda",
         description:
-          "For very lightweight, low-traffic BFF services, or highly scaling back-end jobs, lambda was utilized.",
+          "For very lightweight, low-traffic BFF services, or highly scaling back-end jobs, AWS Lambda was utilized.",
         level: 1,
       },
     ],
@@ -105,7 +105,7 @@ export const jobs: Job[] = [
       {
         name: "React",
         description:
-          "All new front-end work was done in React. Extensively tested apps using cypress and jest with react testing library.",
+          "All new front-end development was done in React. Extensively tested apps using cypress and jest with react testing library.",
         level: 1,
       },
       {
@@ -117,7 +117,7 @@ export const jobs: Job[] = [
       {
         name: "C#/.NET",
         description:
-          "All back-end services were written in .NET, using a combination of App Service and Azure Functions.",
+          "All back-end services were written in .NET, using a combination of persistant App Service and stateless Azure Functions.",
         level: 1,
       },
       {
@@ -163,8 +163,23 @@ export const jobs: Job[] = [
     ],
     technologies: [
       {
-        name: "Lambda",
+        name: "AWS Lambda",
         description: "Used for lightweight, stateless BFF APIs.",
+        level: 1,
+      },
+      {
+        name: "AWS DynamoDB",
+        description: "Used for cost-effective, flexible storage.",
+        level: 1,
+      },
+      {
+        name: "AWS",
+        description: "The cloud of choice for all freelance and side projects.",
+        level: 1,
+      },
+      {
+        name: "TypeScript",
+        description: "The language of choice for freelance and side projects.",
         level: 1,
       },
       {
